@@ -1,11 +1,14 @@
-﻿/*Student ID: 1690702806
-* Name       : Itsada Jiangphukhaio
+﻿using System;
 
-*Section    : 129C
-* No.        : 
+/*Student ID: 1690702806
+ * Name      : Itsada Jiangphukhaio
+ *
+ *Section    : 129C
+ *No.        :
  *Course     : GI113 Computer Programming (GI)
  */
-namespace Lab02
+
+namespace Lab03
 {
     internal class Program
     {
@@ -30,32 +33,31 @@ namespace Lab02
             Console.WriteLine($"Attack Power: {attackPower}");
             Console.WriteLine($"Crit Multiplier: {critMultiplier}");
             Console.WriteLine($"Is Boss: {isBoss}");
+
             Console.WriteLine();
 
-            Console.WriteLine("----- Implicit Conversion: HP as double -----");
+            Console.WriteLine("===== Implicit Conversion: HP as double =====");
 
             double currentHpDouble = currentHp;
             Console.WriteLine($"HP (double): {currentHpDouble}\n");
 
-            Console.WriteLine("----- Exact HP Percent (no integer truncation) -----");
+            Console.WriteLine("===== Exact HP Percent (no integer truncation) =====");
 
             double hpPercentExact = currentHpDouble * 100 / maxHp;
             Console.WriteLine($"HP Percent (exact): {hpPercentExact}%\n");
 
-            Console.WriteLine("----- Explicit Cast: Attack Power -> Display Int -----");
+            Console.WriteLine("===== Explicit Cast: Attack Power -> Display Int =====");
 
             int attackDisplay = (int)attackPower;
             Console.WriteLine($"Attack Power (int cast): {attackDisplay}\n");
 
-            Console.WriteLine("----- Cast vs Convert: Crit Multiplier -----");
+            Console.WriteLine("===== Cast vs Convert: Crit Multiplier =====");
 
             int critCast = (int)critMultiplier;
             int critConvert = Convert.ToInt32(critMultiplier);
+
             Console.WriteLine($"Crit Multiplier (int cast): {critCast}");
             Console.WriteLine($"Crit Multiplier (Convert rounded): {critConvert}");
-
-
-
         }
     }
 }
