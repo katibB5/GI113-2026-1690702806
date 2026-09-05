@@ -1,4 +1,11 @@
-﻿using System;
+/*
+ * Student ID : 1690702806
+ * Name       : Itsada Jiangphukhaio
+ * Section    : 129C
+ * No.        : 
+ * Course     : GI113 Computer Programming (GI)
+ */
+using System;
 
 namespace Lab02
 {
